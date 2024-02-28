@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/JamesJennifer/Code/SavvyCoders/homework/SQLCleaningLab2.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1180"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,6:mainevCars"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="Section 1">-- SELECT Accel, rtrim(Accel, '  sec')
+-- from evCars
+
+
+-- UPDATE evCars
+-- SET Accel = RTRIM(Accel, '  sec')
+-- -- from evCars
+
+
+-- Select Accel
+-- FROM evCars
+
+-- Alter TABLE evCars
+-- RENAME Accel to &quot;Accel (sec)&quot;
+
+-- Select *
+-- From evCars
+</sql><sql name="Section 2">-- SELECT TopSpeed, Range, efficiency, FastCharge
+-- FROM evCars
+-- LIMIT 10
+
+-- SELECT *
+-- FROM evCars
+
+-- SELECT TopSpeed, rtrim(TopSpeed, '  km/h')
+-- FROM evCars
+
+-- UPDATE evCars
+-- SET TopSpeed = RTRIM(TopSpeed, '  km/h')
+
+-- SELECT TopSpeed
+-- from evCars
+
+-- select TopSpeed, round(TopSpeed*0.621371, 1)
+-- from evCars
+
+-- UPDATE evCars
+-- set TopSpeed = round(TopSpeed*0.621371, 1)
+
+-- Alter TABLE evCars
+-- RENAME TopSpeed to &quot;topSpeedMPH&quot;
+
+-- SELECT *
+-- From evCars
+</sql><sql name="Section 3">-- SELECT Range, efficiency, FastCharge
+-- FROM evCars
+-- LIMIT 10
+
+-- SELECT Range
+-- from evCars
+
+-- SELECT range, rtrim(range, '  km')
+-- FROM evCars
+
+-- UPDATE evCars
+-- SET range = RTRIM(range, '  km')
+
+-- SELECT Range
+-- from evCars
+
+-- SELECT TopSpeed, rtrim(TopSpeed, '  km/h')
+-- FROM evCars
+
+-- select Range, round(Range*0.621371,1)
+-- from evCars
+
+-- UPDATE evCars
+-- set range = round(Range*0.621371, 1)
+
+-- Alter TABLE evCars
+-- RENAME Range to &quot;rangeMiles&quot;
+
+-- SELECT *
+-- From evCars</sql><sql name="Section 4">-- SELECT Efficiency, FastCharge
+-- FROM evCars
+-- LIMIT 10
+
+-- SELECT Efficiency, rtrim(Efficiency, '  Wh/km'), FastCharge, rtrim(FastCharge, '  km/h')
+-- FROM evCars
+
+-- UPDATE evCars
+-- SET Efficiency = rtrim(Efficiency, '  Wh/km'), FastCharge = rtrim(FastCharge, '  km/h')
+
+-- SELECT Efficiency, FastCharge
+-- from evCars
+
+-- select FastCharge, round(FastCharge*0.621371,1)
+-- from evCars
+
+-- UPDATE evCars
+-- set FastCharge = round(FastCharge*0.621371, 1)
+
+-- Alter TABLE evCars
+-- RENAME FastCharge to &quot;OneHousrFastChargeMiles&quot;
+
+-- Alter TABLE evCars
+-- RENAME Efficiency to &quot;efficiencyWHperKM&quot;
+
+-- SELECT *
+-- From evCars</sql><sql name="Section 5">-- SELECT RapidCharge, count(*)
+-- FROM evCars
+-- Group by RapidCharge
+
+-- SELECT replace('Rapid charging possible', 'Rapid charging possible', 'Yes') as 'Yes'
+
+-- SELECT replace('Rapid charging not possible', 'Rapid charging not possible', 'No') as 'No'
+
+-- Update evCars
+-- SET RapidCharge = replace(RapidCharge, 'Rapid charging possible', 'Yes') 
+
+-- SELECT *
+-- From evCars
+
+-- Update evCars
+-- SET RapidCharge = REPLACE(RapidCharge, 'Rapid charging not possible', 'No')
+
+
+-- SELECT RapidCharge, count(*)
+-- FROM evCars
+-- Group by RapidCharge
+
+-- SELECT *
+-- From evCars</sql><sql name="Section 6">-- Select PowerTrain, count(*)
+-- FROM evCars
+-- Group by PowerTrain
+
+-- SELECT replace(PowerTrain, 'All Wheel Drive', 'AWD')
+-- 
+-- SELECT replace(PowerTrain, 'Front Wheel Drive', 'FWD')
+-- 
+-- SELECT replace(PowerTrain, 'Rear Wheel Drive', 'RWD')
+
+-- Update evCars
+-- SET PowerTrain = replace(PowerTrain, 'All Wheel Drive', 'AWD')
+
+-- Update evCars
+-- SET PowerTrain = replace(PowerTrain, 'Front Wheel Drive', 'FWD')
+
+-- Update evCars
+-- SET PowerTrain = replace(PowerTrain, 'Rear Wheel Drive', 'RWD')
+
+Select *
+FROM evCars</sql><sql name="Section 7">-- Select *
+-- From evCars
+
+-- Select PriceEuro
+-- From evCars
+
+-- select PriceEuro, round(PriceEuro*1.09,2)
+-- from evCars
+
+-- UPDATE evCars
+-- set PriceEuro = round(PriceEuro*1.09,2)
+
+-- Alter TABLE evCars
+-- RENAME PriceEuro to &quot;PriceUSD&quot;
+
+Select *
+From evCars</sql><current_tab id="6"/></tab_sql></sqlb_project>
